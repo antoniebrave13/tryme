@@ -1,0 +1,11 @@
+c:\users\user\source\repos\ABSCBN\ABSCBN\obj\Debug\ABSCBN.csprojResolveAssemblyReference.cache
+c:\users\user\source\repos\ABSCBN\ABSCBN\obj\Debug\ABSCBN.Login.resources
+c:\users\user\source\repos\ABSCBN\ABSCBN\obj\Debug\ABSCBN.Properties.Resources.resources
+c:\users\user\source\repos\ABSCBN\ABSCBN\obj\Debug\ABSCBN.csproj.GenerateResource.Cache
+c:\users\user\source\repos\ABSCBN\ABSCBN\obj\Debug\ABSCBN.csproj.CoreCompileInputs.cache
+c:\users\user\source\repos\ABSCBN\ABSCBN\bin\Debug\ABSCBN.exe.config
+c:\users\user\source\repos\ABSCBN\ABSCBN\bin\Debug\ABSCBN.exe
+c:\users\user\source\repos\ABSCBN\ABSCBN\bin\Debug\ABSCBN.pdb
+c:\users\user\source\repos\ABSCBN\ABSCBN\obj\Debug\ABSCBN.exe
+c:\users\user\source\repos\ABSCBN\ABSCBN\obj\Debug\ABSCBN.pdb
+c:\users\user\source\repos\ABSCBN\ABSCBN\obj\Debug\ABSCBN.CashierHome.resources
