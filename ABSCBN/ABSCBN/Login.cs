@@ -12,6 +12,9 @@ namespace ABSCBN
 {
     public partial class Login : Form
     {
+        CashierHome cashierHomePage = new CashierHome();
+        AdminHome admin = new AdminHome();
+
         public Login()
         {
             InitializeComponent();
@@ -22,5 +25,27 @@ namespace ABSCBN
         {
             panel1.BackColor = Color.FromArgb(100, 255, 255, 255);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            //cashierHomePage.ShowDialog();
+            //if (textBox1.Text == "Admin" || textBox2.Text == "Admin")
+            //{
+            //    MessageBox.Show("Successfully Login");
+            //    this.Hide();
+            //    admin.Show();
+            //}
+            //else
+            //{
+            //    cashierHomePage.Show();
+            //    this.Hide();
+            //}
+
+            this.Hide();
+            admin.Show();
+        }
+
+
     }
 }
