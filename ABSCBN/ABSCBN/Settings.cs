@@ -16,5 +16,15 @@ namespace ABSCBN
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            panel1.BackColor = Color.FromArgb(100, 255, 255, 255);
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

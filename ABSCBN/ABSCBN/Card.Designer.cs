@@ -80,25 +80,27 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.BackgroundImage = global::ABSCBN.Properties.Resources.load;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.Location = new System.Drawing.Point(1489, 905);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(148, 49);
             this.button9.TabIndex = 4;
-            this.button9.Text = "Load";
             this.button9.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackgroundImage = global::ABSCBN.Properties.Resources.cancel;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.Location = new System.Drawing.Point(1318, 905);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(148, 49);
             this.button8.TabIndex = 2;
-            this.button8.Text = "Cancel";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // panel4
@@ -116,7 +118,7 @@
             this.label6.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(256, 29);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(214, 46);
+            this.label6.Size = new System.Drawing.Size(210, 45);
             this.label6.TabIndex = 1;
             this.label6.Text = "Package List";
             // 
@@ -170,7 +172,9 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Firebrick;
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = global::ABSCBN.Properties.Resources.promo_button;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
@@ -178,7 +182,6 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(408, 147);
             this.button7.TabIndex = 9;
-            this.button7.Text = "Promo / Bundle Loading";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -237,7 +240,10 @@
             // 
             // button5
             // 
+            this.button5.BackgroundImage = global::ABSCBN.Properties.Resources.denominations;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(435, 247);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(277, 66);
@@ -247,7 +253,10 @@
             // 
             // button6
             // 
+            this.button6.BackgroundImage = global::ABSCBN.Properties.Resources.denominations;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(97, 247);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(277, 66);
@@ -257,7 +266,10 @@
             // 
             // button3
             // 
+            this.button3.BackgroundImage = global::ABSCBN.Properties.Resources.denominations;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(435, 149);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(277, 66);
@@ -267,7 +279,10 @@
             // 
             // button4
             // 
+            this.button4.BackgroundImage = global::ABSCBN.Properties.Resources.denominations;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(97, 149);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(277, 66);
@@ -277,7 +292,10 @@
             // 
             // button2
             // 
+            this.button2.BackgroundImage = global::ABSCBN.Properties.Resources.denominations;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(435, 52);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(277, 66);
@@ -287,7 +305,10 @@
             // 
             // button1
             // 
+            this.button1.BackgroundImage = global::ABSCBN.Properties.Resources.denominations;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(97, 52);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(277, 66);

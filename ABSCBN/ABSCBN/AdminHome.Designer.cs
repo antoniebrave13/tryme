@@ -64,7 +64,7 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::ABSCBN.Properties.Resources.card;
+            this.button1.BackgroundImage = global::ABSCBN.Properties.Resources.settings;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Location = new System.Drawing.Point(780, 286);
             this.button1.Name = "button1";
@@ -86,7 +86,7 @@
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::ABSCBN.Properties.Resources.card;
+            this.button3.BackgroundImage = global::ABSCBN.Properties.Resources.registration;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Location = new System.Drawing.Point(1327, 286);
             this.button3.Name = "button3";
@@ -96,7 +96,7 @@
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::ABSCBN.Properties.Resources.card;
+            this.button4.BackgroundImage = global::ABSCBN.Properties.Resources.transaction;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Location = new System.Drawing.Point(1327, 588);
             this.button4.Name = "button4";
@@ -106,7 +106,7 @@
             // 
             // button5
             // 
-            this.button5.BackgroundImage = global::ABSCBN.Properties.Resources.dashboard;
+            this.button5.BackgroundImage = global::ABSCBN.Properties.Resources.card;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button5.Location = new System.Drawing.Point(244, 588);
             this.button5.Name = "button5";
@@ -116,7 +116,7 @@
             // 
             // button6
             // 
-            this.button6.BackgroundImage = global::ABSCBN.Properties.Resources.card;
+            this.button6.BackgroundImage = global::ABSCBN.Properties.Resources.report;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.Location = new System.Drawing.Point(780, 588);
             this.button6.Name = "button6";

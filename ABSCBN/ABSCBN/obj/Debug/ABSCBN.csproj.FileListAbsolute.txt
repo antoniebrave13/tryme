@@ -24,3 +24,4 @@ C:\Users\xijey\Documents\GitHub\tryme\ABSCBN\ABSCBN\obj\Debug\ABSCBN.AdminHome.r
 C:\Users\xijey\Documents\GitHub\tryme\ABSCBN\ABSCBN\obj\Debug\ABSCBN.Registration.resources
 C:\Users\xijey\Documents\GitHub\tryme\ABSCBN\ABSCBN\obj\Debug\ABSCBN.Card.resources
 C:\Users\xijey\Documents\GitHub\tryme\ABSCBN\ABSCBN\obj\Debug\ABSCBN.package.resources
+C:\Users\xijey\Documents\GitHub\tryme\ABSCBN\ABSCBN\obj\Debug\ABSCBN.Settings.resources
