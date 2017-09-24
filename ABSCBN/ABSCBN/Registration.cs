@@ -7,11 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace ABSCBN
 {
     public partial class Registration : Form
     {
+
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var createdParameter = base.CreateParams;
+                createdParameter.ExStyle |= 0x2000000;
+                return createdParameter;
+            }
+        }
+
+        NFCReader nfcReader = new NFCReader();
+
         public Registration()
         {
             InitializeComponent();
@@ -36,12 +50,12 @@ namespace ABSCBN
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+       
+        private void ButtonLoadCard_Click(object sender, EventArgs e)
         {
-            Card card = new Card();
-            Registration registration = new Registration();
-            card.Show();
-            registration.Hide();
+            Form newCard = new Card();
+            newCard.Show();
+            
         }
     }
 }

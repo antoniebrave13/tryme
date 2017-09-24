@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashierHome));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonRegisterCustomer = new System.Windows.Forms.Button();
+            this.ButtonLoadCard = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,31 +60,31 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // buttonRegisterCustomer
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(416, 350);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(498, 288);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonRegisterCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRegisterCustomer.BackgroundImage")));
+            this.buttonRegisterCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonRegisterCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRegisterCustomer.Location = new System.Drawing.Point(441, 394);
+            this.buttonRegisterCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRegisterCustomer.Name = "buttonRegisterCustomer";
+            this.buttonRegisterCustomer.Size = new System.Drawing.Size(498, 201);
+            this.buttonRegisterCustomer.TabIndex = 1;
+            this.buttonRegisterCustomer.UseVisualStyleBackColor = true;
+            this.buttonRegisterCustomer.Click += new System.EventHandler(this.ButtonRegisterCustomer_Click);
             // 
-            // button2
+            // ButtonLoadCard
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1049, 350);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(507, 288);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ButtonLoadCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonLoadCard.BackgroundImage")));
+            this.ButtonLoadCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ButtonLoadCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonLoadCard.Location = new System.Drawing.Point(1039, 391);
+            this.ButtonLoadCard.Margin = new System.Windows.Forms.Padding(4);
+            this.ButtonLoadCard.Name = "ButtonLoadCard";
+            this.ButtonLoadCard.Size = new System.Drawing.Size(498, 201);
+            this.ButtonLoadCard.TabIndex = 2;
+            this.ButtonLoadCard.UseVisualStyleBackColor = true;
+            this.ButtonLoadCard.Click += new System.EventHandler(this.ButtonLoadCard_Click);
             // 
             // CashierHome
             // 
@@ -93,8 +93,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1932, 1092);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonLoadCard);
+            this.Controls.Add(this.buttonRegisterCustomer);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -112,7 +112,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonRegisterCustomer;
+        private System.Windows.Forms.Button ButtonLoadCard;
     }
 }

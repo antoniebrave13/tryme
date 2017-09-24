@@ -12,10 +12,30 @@ namespace ABSCBN
 {
     public partial class Card : Form
     {
-        package package = new package();
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var createdParameter = base.CreateParams;
+                createdParameter.ExStyle |= 0x2000000;
+                return createdParameter;
+            }
+        }
+
+        NFCReader nfcReader = new NFCReader();
+
+
         public Card()
         {
             InitializeComponent();
+            LoadCardNumber();
+        }
+        
+        public void LoadCardNumber()
+        {
+            
+            TextBoxCardNumber.Text =nfcReader.ConnectHardware();
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -26,7 +46,22 @@ namespace ABSCBN
 
         private void button7_Click(object sender, EventArgs e)
         {
-            package.Show();
+           
+        }
+
+        private void ButtonLoadCard_Click(object sender, EventArgs e)
+        {
+            Form cashierHomePage = new CashierHome();
+            cashierHomePage.Show();
+            Close();
+        }
+
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            Form cashierHomePage = new CashierHome();
+            cashierHomePage.Show();
+            Close();
+
         }
     }
 }

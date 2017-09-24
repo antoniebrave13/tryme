@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.ButtonLoadCard = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -51,11 +51,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TextBoxCardNumber = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.TextBoxCardBalance = new System.Windows.Forms.TextBox();
+            this.LabelCardLoad = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,8 +66,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.ButtonLoadCard);
+            this.panel1.Controls.Add(this.buttonCancel);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -77,31 +77,33 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button9
+            // ButtonLoadCard
             // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.BackgroundImage = global::ABSCBN.Properties.Resources.load;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(1489, 905);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(148, 49);
-            this.button9.TabIndex = 4;
-            this.button9.UseVisualStyleBackColor = false;
+            this.ButtonLoadCard.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonLoadCard.BackgroundImage = global::ABSCBN.Properties.Resources.load;
+            this.ButtonLoadCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonLoadCard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonLoadCard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLoadCard.Location = new System.Drawing.Point(1489, 905);
+            this.ButtonLoadCard.Name = "ButtonLoadCard";
+            this.ButtonLoadCard.Size = new System.Drawing.Size(148, 49);
+            this.ButtonLoadCard.TabIndex = 4;
+            this.ButtonLoadCard.UseVisualStyleBackColor = false;
+            this.ButtonLoadCard.Click += new System.EventHandler(this.ButtonLoadCard_Click);
             // 
-            // button8
+            // buttonCancel
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.BackgroundImage = global::ABSCBN.Properties.Resources.cancel;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(1318, 905);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(148, 49);
-            this.button8.TabIndex = 2;
-            this.button8.UseVisualStyleBackColor = false;
+            this.buttonCancel.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCancel.BackgroundImage = global::ABSCBN.Properties.Resources.cancel;
+            this.buttonCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.Location = new System.Drawing.Point(1318, 905);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(148, 49);
+            this.buttonCancel.TabIndex = 2;
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
             // panel4
             // 
@@ -162,9 +164,9 @@
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.TextBoxCardNumber);
+            this.panel3.Controls.Add(this.LabelCardLoad);
+            this.panel3.Controls.Add(this.TextBoxCardBalance);
             this.panel3.Location = new System.Drawing.Point(51, 147);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(898, 735);
@@ -183,7 +185,6 @@
             this.button7.Size = new System.Drawing.Size(408, 147);
             this.button7.TabIndex = 9;
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label5
             // 
@@ -320,37 +321,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(467, 29);
+            this.label3.Location = new System.Drawing.Point(18, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(144, 28);
             this.label3.TabIndex = 3;
             this.label3.Text = "Card Number:";
             // 
-            // textBox2
+            // TextBoxCardNumber
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(472, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(392, 34);
-            this.textBox2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Name:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(21, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(392, 34);
-            this.textBox1.TabIndex = 0;
+            this.TextBoxCardNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxCardNumber.Location = new System.Drawing.Point(23, 60);
+            this.TextBoxCardNumber.Name = "TextBoxCardNumber";
+            this.TextBoxCardNumber.Size = new System.Drawing.Size(372, 34);
+            this.TextBoxCardNumber.TabIndex = 2;
             // 
             // panel2
             // 
@@ -371,6 +354,24 @@
             this.label1.Size = new System.Drawing.Size(190, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Card Loading";
+            // 
+            // TextBoxCardBalance
+            // 
+            this.TextBoxCardBalance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxCardBalance.Location = new System.Drawing.Point(472, 60);
+            this.TextBoxCardBalance.Name = "TextBoxCardBalance";
+            this.TextBoxCardBalance.Size = new System.Drawing.Size(392, 34);
+            this.TextBoxCardBalance.TabIndex = 0;
+            // 
+            // LabelCardLoad
+            // 
+            this.LabelCardLoad.AutoSize = true;
+            this.LabelCardLoad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCardLoad.Location = new System.Drawing.Point(467, 19);
+            this.LabelCardLoad.Name = "LabelCardLoad";
+            this.LabelCardLoad.Size = new System.Drawing.Size(91, 28);
+            this.LabelCardLoad.TabIndex = 1;
+            this.LabelCardLoad.Text = "Balance:";
             // 
             // Card
             // 
@@ -420,13 +421,13 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TextBoxCardNumber;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button ButtonLoadCard;
+        private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label LabelCardLoad;
+        private System.Windows.Forms.TextBox TextBoxCardBalance;
     }
 }

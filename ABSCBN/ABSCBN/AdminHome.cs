@@ -12,6 +12,17 @@ namespace ABSCBN
 {
     public partial class AdminHome : Form
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var createdParameter = base.CreateParams;
+                createdParameter.ExStyle |= 0x2000000;
+                return createdParameter;
+            }
+        }
+
+
         public AdminHome()
         {
             InitializeComponent();

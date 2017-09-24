@@ -69,6 +69,13 @@
     <Compile Include="Card.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="NFCReader.cs" />
+    <Compile Include="Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction.Designer.cs">
+      <DependentUpon>Transaction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Card.Designer.cs">
       <DependentUpon>Card.cs</DependentUpon>
     </Compile>
@@ -183,6 +190,48 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\manage_bundles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\manage_cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\promo_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\package1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\package2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\package3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\package4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\package5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\package6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\add_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\denomination.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\img\denominations.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

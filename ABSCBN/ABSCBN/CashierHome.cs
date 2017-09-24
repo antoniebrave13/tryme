@@ -10,30 +10,43 @@ using System.Windows.Forms;
 
 namespace ABSCBN
 {
+    
     public partial class CashierHome : Form
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                var createdParameter = base.CreateParams;
+                createdParameter.ExStyle |= 0x2000000;
+                return createdParameter;
+            }
+        }
+
         
-        Registration registration = new Registration();
-        Card card = new Card();
-
-
         public CashierHome()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void ButtonRegisterCustomer_Click(object sender, EventArgs e)
         {
-            CashierHome cashier2 = new CashierHome();
-            registration.Show();
-            cashier2.Hide();
+        
+            Form registerCustomer = new Registration();
+            registerCustomer.Show();
+            Close();
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ButtonLoadCard_Click(object sender, EventArgs e)
         {
-           
-            card.Show();
-            registration.Hide();
+            
+            Form reLoadCard = new Card();
+            reLoadCard.Show();
+            Close();
+
         }
     }
 }
